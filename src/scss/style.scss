@@ -1,11 +1,16 @@
 @import "reset";
 
+$blue-dark: #122ab2;
+$blue-light: #2c70ff;
+$light: #fff;
+$dark: #7c7c7c;
+
 // superinfo-bg
 .superinfo-bg {
-  background-color: #122ab2;
-  color: #ffffff;
+  background-color: $blue-dark;
+  color: $light;
   a {
-    color: #ffffff;
+    color: $light;
   }
 }
 
@@ -25,7 +30,7 @@
 
 // MENU
 .menu-bg {
-  background-color: #2c70ff;
+  background-color: $blue-light;
 }
 
 .menu {
@@ -37,7 +42,7 @@
   justify-content: space-between;
   align-items: center;
   a {
-    color: #ffffff;
+    color: $light;
   }
 }
 
@@ -68,4 +73,40 @@
   max-width: 960px;
   margin: 60px auto;
   padding: 60px 10px;
+}
+
+// Sobre
+
+.sobre {
+  border-top: 2px solid $blue-light;
+  border-bottom: 2px solid $blue-light;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  > .sobre-info {
+    flex: 2 1 300px; // grow shirink(1 defaul) basis(0 default)
+    margin: 0 10px;
+  }
+}
+
+.sobre-info {
+  h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: $dark;
+  }
+}
+
+.sobre-img {
+  flex: 1 1 160px;
+  margin: 0 10px;
 }
