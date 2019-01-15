@@ -4,6 +4,11 @@ $blue-dark: #122ab2;
 $blue-light: #2c70ff;
 $light: #fff;
 $dark: #7c7c7c;
+$dark-01: #f1f1f1;
+
+$purple: #ae81ff;
+$pink: #f9265e;
+$blue: #66d9eb;
 
 // superinfo-bg
 .superinfo-bg {
@@ -109,4 +114,44 @@ $dark: #7c7c7c;
 .sobre-img {
   flex: 1 1 160px;
   margin: 0 10px;
+}
+
+.produtos {
+  max-width: 960px;
+  margin: 60px auto;
+
+  h1 {
+    font-size: 3em;
+    margin: 0 10px 60px 10px;
+  }
+}
+
+.produtos-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.produtos-item {
+  flex: 1 1 175px;
+  margin: 10px;
+
+  h2 {
+    font-size: 3em;
+    background-color: $dark-01;
+    color: $dark;
+    padding: 60px 20px;
+  }
+}
+
+.purple {
+  border-top: 8px solid $purple;
+}
+
+.pink {
+  border-top: 8px solid $pink;
+}
+
+.blue {
+  border-top: 8px solid $blue;
 }
