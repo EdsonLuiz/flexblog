@@ -353,3 +353,16 @@ $blue: #66d9eb;
     }
   }
 }
+
+.footer {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  background-color: $blue-light;
+  color: $light;
+
+  p {
+    flex: 1;
+    text-align: center;
+  }
+}
